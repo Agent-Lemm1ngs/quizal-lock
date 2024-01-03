@@ -3,9 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center w-full justify-center bg-blue-50 gap-5 p-24">
-      <div className="flex flex-col sm:flex-row items-center gap-5">
+      <div className="flex flex-col sm:flex-row items-center gap-5 max-w-2xl">
         <Image src="/logo.png" alt="Quizal" height={150} width={150} />
-        <h1 className="text-4xl sm:text-6xl text-gray-800 font-bold">Quizal</h1>
+        <div className="flex flex-col w-full items-start">
+          <h1 className="text-4xl sm:text-6xl text-gray-800 font-bold">
+            Quizal
+          </h1>
+
+          <p>Boost your success with Quizal and ace your exams.</p>
+        </div>
       </div>
       <div className="max-w-2xl sm:text-xl text-center w-full italic text-red-500">
         <p>
