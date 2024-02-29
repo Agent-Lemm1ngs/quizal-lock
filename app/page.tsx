@@ -14,6 +14,7 @@ export default function Home() {
               src="/logo.svg"
               width={100}
               height={100}
+              alt="image"
               className="p-2 md:p-0"
             />{" "}
             <h1 className="text-5xl font-extrabold text-blue-500">Quizal</h1>
