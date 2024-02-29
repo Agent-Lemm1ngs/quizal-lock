@@ -2,29 +2,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center w-full justify-center bg-blue-50 gap-5 p-24">
-      <div className="flex flex-col sm:flex-row items-center gap-5 max-w-2xl">
-        <Image src="/logo.png" alt="Quizal" height={150} width={150} />
-        <div className="flex flex-col w-full items-start">
-          <h1 className="text-4xl sm:text-6xl text-gray-800 font-bold">
-            Quizal
-          </h1>
+    <div className="bg-blue-50/[0.6] border shadow flex-row gap-5 justify-center items-center flex rounded w-full h-screen bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+      <div className="hidden w-full h-full items-center justify-center md:flex">
+        <Image src="website-maintenance.svg" height={500} width={500} />
+      </div>
 
-          <p>Boost your success with Quizal and ace your exams.</p>
+      <div className="w-full flex-col gap-5 bg-gradient-to-b from-white to-blue-200  h-full justify-center flex items-center p-10">
+        <div className="flex items-center max-w-lg flex-col md:flex-row w-full justify-center gap-2 md:gap-5">
+          <div className="flex flex-col justify-center w-full items-center  text-center gap-2">
+            <Image
+              src="/logo.svg"
+              width={100}
+              height={100}
+              className="p-2 md:p-0"
+            />{" "}
+            <h1 className="text-5xl font-extrabold text-blue-500">Quizal</h1>
+            <h1 className="text-xl font-bold">
+              We&apos;re performing some vital fixes, please check back later
+            </h1>
+            <h1 className="gap-2 flex items-center">
+              Join our{""}
+              <a
+                className="border p-2 rounded-lg cursor-pointer border-blue-500 hover:bg-blue-100 active:bg-blue-200"
+                href="https://discord.gg/xaqMPV9qCN"
+              >
+                Discord
+              </a>{" "}
+              to be updated
+            </h1>
+          </div>
         </div>
       </div>
-      <div className="max-w-2xl sm:text-xl text-center w-full italic text-red-500">
-        <p>
-          Quizal is currently under reconstruction. Join our{" "}
-          <a
-            href="https://discord.gg/xaqMPV9qCN"
-            className="text-blue-500 hover:text-blue-600 active:text-blue-500 duration-75"
-          >
-            Discord
-          </a>{" "}
-          if you require any help.
-        </p>
-      </div>
-    </main>
+    </div>
   );
 }
+//
