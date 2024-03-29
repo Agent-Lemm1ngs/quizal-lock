@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-blue-50/[0.6] border shadow flex-row gap-5 justify-center items-center flex rounded w-full h-dvh bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+    <div className="bg-blue-50/[0.6] border shadow flex-row gap-5 justify-center items-center flex rounded w-full h-screen bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
       <div className="hidden w-full h-full items-center justify-center md:flex">
         <Image src="website-maintenance.svg" height={500} width={500} alt="image" />
       </div>
